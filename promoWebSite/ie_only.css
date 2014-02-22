@@ -1,0 +1,43 @@
+a.visibleNav {	
+	font-size: 17px;	
+}
+
+.sliderInfo h2, a.visibleNav, .sliderInfo a,
+ #content h2, .sofia , span.readMore a, #footerInfo p,
+ #footerProducts p, .narrowBold,  .telFooter, .narrow, 
+ #contentAll h2, .sideNavFirstChild, td.city, span.products_caption,
+ div#pagination a, #mainContent, #mainContent h3, #header {
+	letter-spacing: -1px;
+}
+
+.red_line{	
+	width: 80%;	
+}
+
+.white_line{
+	width: 37%;
+}
+
+#contentAll .red_line {
+	width: 27%;
+}
+
+#contentAll .red_line_pile{
+	width: 49%;
+}
+
+#contentAll .red_line_products {
+	width: 64%;
+}
+
+#contentAll .red_line_about {
+	width: 75%;
+}
+
+#contentAll .red_line_news {
+	width: 85%;
+}
+
+#contentAll .red_line_contacts {
+	width: 82%;
+}
