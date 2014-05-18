@@ -10,11 +10,15 @@
 		<meta name="author" content="Toni Marinova"/>
 		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=cyrillic,cyrillic-ext' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
-		 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		<!-- bxSlider Javascript file -->
+		<script src="js/jquery.bxslider.min.js"></script>
+		<!-- bxSlider CSS file -->
+		<link href="js/jquery.bxslider.css" rel="stylesheet" />
 		<title>Примо - вкусът има значение</title>
 	</head>
-	<body onload="Slider();">			
+	<body>			
 		<div id="header" class="clear">
 			<div id="innerHeader" class="clear">
 				<span id="contactsHead" class="left"> | можете да ни намерите на:</span>
@@ -22,7 +26,7 @@
 			</div>
 		</div>
 		<div id="wrapper" class="clear">
-			<img src="images/primo_logo.png" id="logoImg" alt="Primo Logo" width="226" height="129"/>
+			<a href="home.html"><img src="images/primo_logo.png" id="logoImg" alt="Primo Logo" width="226" height="129"/></a>
 			<div id="topNavi" class="clear">
 				<ul class="mainMenu left">
 					<li id="start" class="navLink"><a href="home.html" title="Начало" class="visibleNav current">начало</a></li>
@@ -56,25 +60,39 @@
 					<li id="contactUs" class="navLink"><a class="visibleNav" href="contacts.html" title="Контакти">контакти</a></li>
 				</ul>
 			</div>
-			<div id ="mySlider">				
-				<div class="imgHolder">
-					<img id="1" src="images/slider_test_1.jpg" alt="Food two" />
-					<div class="sliderInfo">
-						<h2>Незабравим паниран вкус</h2>
-						<p>
-							Незабравим вкус на прясно панирано <br />пилешко месо
-						</p>	
-						<span><a href="#">Научете още >></a></span>
-					<ul>
-						<li><a href="#">1</a></li>
-						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li><a href="#">4</a></li>
-						<li><a href="#">5</a></li>
-					</ul>	
-					</div>				
-				</div>
+			<div id ="mySlider">
+				<ul class="bxslider" >
+					<li>
+						<div class="imgHolder">
+							<img  src="images/slider_test_1.jpg" alt="Food two" />
+							<div class="sliderInfo">
+								<h2>Незабравим паниран вкус</h2>
+								<p>
+									Незабравим вкус на прясно панирано <br />пилешко месо
+								</p>	
+								<span><a href="#">Научете още >></a></span>									
+							</div>				
+						</div>
+					</li>
+					<li>
+						<div class="imgHolder">
+							<img src="images/slider_test_1.jpg" alt="Food two" />
+							<div class="sliderInfo">
+								<h2>Незабравим паниран вкус</h2>
+								<p>
+									Незабравим вкус на прясно панирано <br />пилешко месо
+								</p>	
+								<span><a href="#">Научете още >></a></span>									
+							</div>				
+						</div>
+					</li>
+				</ul>					
 			</div>
+			<script type="text/javascript">					
+				 $(document).ready(function(){
+  $('.bxslider').bxSlider();
+});
+				</script>
 			<div id ="content" class="clear">
 				<div id="main" class="left clear">
 					<h2 class="left">продукти</h2><span class="right red_line"></span>

@@ -226,7 +226,6 @@ SLIDER
 ***********************************************/
 #mySlider {
 	width: 946px;
-	height: 400px;
 	padding: 7px;
 	background-color: #fff;	
 	border-radius: 5px;
@@ -250,7 +249,7 @@ SLIDER
 	text-align: center;
 	z-index: 100;
 	position: absolute;
-	top: 117px;
+	top: 0;
 	left: 35px;
 	background: #1a9c42; /* for non-css3 browsers */
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7fc03e', endColorstr='#009343'); /* for IE */
@@ -327,6 +326,11 @@ CONTENT HOME
 	border-radius: 5px;
 	margin-right: 20px;
 	color: #bd1d2c;
+}
+
+
+#mainContent p {
+	font-size: 16px;
 }
 
 #content h2 {
@@ -619,7 +623,9 @@ ul#products_list li {
 	display: inline-block;
 	width: 150px;
 	margin-right: 5px;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	background:  url('images/mini_blue_line.png') repeat-x bottom;
 }
 
 span.products_caption {
@@ -750,3 +756,21 @@ CONTACTS
 	padding:10px;
 	background: url('images/red_line.png') repeat-x center;
 }
+
+#contact_info {
+	margin-left: 70px;
+	padding-top: 25px;
+	font-family: 'PT Sans', Helvetica, sans-serif;
+}
+
+#contact_info p {
+	margin-bottom: 15px;
+}
+
+
+#map_canvas {
+    width: 400px;
+    height: 300px;
+    background-color: red;
+}
+

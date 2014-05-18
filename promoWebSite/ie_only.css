@@ -41,3 +41,7 @@ a.visibleNav {
 #contentAll .red_line_contacts {
 	width: 82%;
 }
+
+img {
+	border: none;
+}

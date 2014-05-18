@@ -12,6 +12,7 @@
 		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
 		 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		   <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 		<title>Контакти</title>
 	</head>
 	<body>
@@ -22,12 +23,12 @@
 			</div>
 		</div>
 		<div id="wrapper" class="clear">
-			<img src="images/primo_logo.png" id="logoImg" alt="Primo Logo" width="226" height="129"/>
+			<a href="home.html"><img src="images/primo_logo.png" id="logoImg" alt="Primo Logo" width="226" height="129"/></a>
 			<div id="topNavi" class="clear">
 				<ul class="mainMenu left">
 					<li id="news" class="navLink"><a href="home.html" title="Начало" class="visibleNav">начало</a></li>
 					<li id="dist" class="navLink"><a class="visibleNav" href="distributors.html" title="Дистрибутори" >дистрибутори</a></li>
-					<li class="navLink" id="products"><a class="visibleNav" href="#" title="Продукти">продукти</a>
+					<li class="navLink" id="products"><a class="visibleNav" href="products.html" title="Продукти">продукти</a>
 						<div class="submenu clear">
 							<div class="columnOne">
 								<ul>
@@ -60,7 +61,21 @@
 				<div id="mainAll" class="left clear">
 					<h2 class="left">контакти</h2><span class="right red_line_contacts"></span>
 					<br class="clear_br"/>
-					
+					<div class="left" id="contact_info">
+						<p>Адрес: гр. Сандански 2800,<br />
+						Път Е79, местност Друма</p>
+
+						<p>Телефон: 074 63 14 54<br />
+						Факс: 074 63 14 14</p>
+						
+						<p>e-mail: primotrade@abv.bg<br />
+						primo@primo-menu.com</p>
+					</div>
+					 <div class="right" id="map_canvas"></div>
+					 <br class="clear_br"/>
+					 <script>
+						 function initialize() {}
+					 </script>
 				</div>
 				<script type="text/javascript">					
 				 $().ready(function() {		
